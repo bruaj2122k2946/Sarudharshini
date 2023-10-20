@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saru-portfolio</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: antiquewhite;
+            }
+
+            header{
+                background-color: #333;
+                color: aqua ;
+                text-align: center;
+                padding: 2rem 0;
+                position: relative;
+            }
+
+            .header-content h1{
+                font-size: 2.5rem;
+            }
+
+            /*add styles for the round profile pic*/
+            .profile-picture{
+                width: 100px;
+                height: 100px;
+                border-radius: 75%;/*create a circular shape*/
+                object-fit: cover;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+
+            nav{
+                background-color: #333;
+                color: aqua;
+                text-align: center;
+            }
+
+            nav ul{
+                list-style-type: none;
+                padding: 2rem;
+            }
+
+            nav ul li{
+                display: inline;
+                margin: 0 20px;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+                color: aqua;
+            }
+
+            .section-content{
+                background-color: aqua;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0  10px rgba(0, 0, 0, o.1);
+            }
+
+            .dowload-button{
+                background-color: #333;
+                color: aqua;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+
+            .download-button:hover{
+                background-color: blue;
+            }
+
+            footer{
+                text-align: center;
+                padding: 1rem 0;
+                background-color: #333;
+                color: aqua;
+            }
+
+            ul{
+                list-style-type: lower-alpha;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <!.. add your profile-->
+                <img src="profile.jpeg" alt="your profile picture" class="profile-picture">
+                <h1>Sarudharshini</h1>
+                <p>Student</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#personal skills">Personal Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Welcome to my webpage! I'm Sarudharshini from Tirupur. Currently I'm pusuing my bachelor's degree in AVP College of arts and science. I consider myself as a responsible person.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="section-content">
+                <h2>Bsc.CS</h2>
+                <p>AVP College of arts and science, Tirupur</p>
+            </div>
+        </section>
+
+        <section id="personal skills">
+            <div class="section-content">
+                <h2>Personal skills</h2>
+                <ul>
+                    <li>Self confidence</li>
+                    <li>Time management</li>
+                    <li>Quick learner</li>
+                    <li>Leadership Quality</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Resume">
+            <center>
+            <div class="section">
+                <a id="Download" href="PDFGallery_20231020_110240.pdf" download="PDFGallery_20231020_110240.pdf">Download Resume</a>
+            </div>
+            </center>
+            <script>
+                document.getElementById("Download").addEventListener("click",function(){alert("Resume download initiated!");
+            });
+            </script>
+        </section>
+       
+        <footer>
+            <p>&copy;2023 saru</p>
+        </footer>
+    </body>
+</html>
